@@ -1,5 +1,4 @@
 class Article < ActiveRecord::Base
-	#Table => articles
-	#Campos => article.title() => 'El titulo Artículo'
-	#Escribir métodos
+	validates :title, presence: true, uniqueness: true
+	validates :body, presence: true, length: { minimum: 15}
 end
