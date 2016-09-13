@@ -4,12 +4,16 @@ html,body{
 }
 a,a:visited{
 	color: inherit;
+	text-decoration: none;
 }
 .be-black{
 	background-color: black;
 }
 .be-red{
 	background-color: red;
+}
+.be-text-red{
+	color: #E74C3C !important;
 }
 .btn{
 	background-color: black;
@@ -47,6 +51,17 @@ a,a:visited{
 }
 .no-margin{
 	margin: 0px;
+}
+.text-left{
+	text-align: left;
+}
+.text-header{
+	font-size: 4em;
+	font-family: 'Baloo Tamma', cursive;
+}
+.text-big{
+	font-size: 2em;
+	font-family: 'Baloo Tamma', cursive;
 }
 .white{
 	color: white;

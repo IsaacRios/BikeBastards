@@ -1,0 +1,25 @@
+<header>
+	<nav class="be-black white large-padding">
+		<ul id="logo" class="no-list row center-xs middle-xs font-baloo">
+			<li class="col-md col-xs"><h1 class="no-margin">BIKE BASTARDS</h1></li>
+			<li class="col-md col-xs">
+				<%= link_to "Inicio", root_path%>
+			</li>
+			<li class="col-md col-xs">Bike Parts</li>
+			<li class="col-md col-xs">4 The Roads</li>
+			<li class="col-md col-xs">Clothing</li>
+			<% if user_signed_in? %>
+			<li class="col-md col-xs">
+				<%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %> 
+			</li>
+			<%else%>
+			<li class="col-md col-xs">
+				<%= link_to "Iniciar sesión", new_user_session_path %> 
+			</li>
+			<li class="col-md col-xs">
+				<%= link_to "Crear cuenta", new_user_registration_path %> 
+			</li>
+			<%end%>
+		</ul>
+	</nav>
+</header>

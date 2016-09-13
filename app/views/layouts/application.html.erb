@@ -9,19 +9,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header>
-	<nav class="be-black white large-padding">
-		<ul id="logo" class="no-list row center-xs middle-xs font-baloo">
-			<li class="col-md col-xs"><h1 class="no-margin">BIKE BASTARDS</h1></li>
-			<li class="col-md col-xs">
-				<%= link_to "Inicio", root_path%>
-			</li>
-			<li class="col-md col-xs">Bike Parts</li>
-			<li class="col-md col-xs">4 The Roads</li>
-			<li class="col-md col-xs">Clothing</li>
-		</ul>
-	</nav>
-</header>
+
+<%= render "partials/navigation" %>
+
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
 <%= yield %>
 
 </body>
