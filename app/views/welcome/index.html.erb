@@ -1,1 +1,4 @@
-<p class="text-big">Bienvenido</p>
+<% if user_signed_in? %>
+	<p class="text-big">Bienvenido</p>
+	<p><%= current_user.email %></p> 
+<%end%>
